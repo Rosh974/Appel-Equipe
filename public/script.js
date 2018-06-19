@@ -5,7 +5,7 @@ $(document).ready(function () {
         url: 'http://127.0.0.1:7777/equipes',
         success: function (datas) {
             for (var id in datas) {
-                $('#team').append('<div class="mt-5 mx-auto" style="width:250px">'+'<b style="font-size:50px"> '+datas[id].pays +'</b>'+'<div class="inline-block "> <img class="" style="width:250px; " src="'+datas[id].flag +'"> </div>' +'</div>')
+                $('#equip').append('<div class="mt-5 mx-auto" style="width:250px">'+'<b style="font-size:50px"> '+datas[id].pays +'</b>'+'<div class="inline-block "> <img class="" style="width:250px; " src="'+datas[id].flag +'"> </div>' +'</div>')
             }
         },
 
